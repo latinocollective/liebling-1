@@ -1,5 +1,9 @@
 {
-  
+  "author": {
+    "email": "mail@latinocollective.com",
+    "name": "Latino Collective",
+    "url": "https://latinocollective.com"
+  },
   "config": {
     "posts_per_page": 10,
     "image_sizes": {
@@ -23,11 +27,30 @@
       }
     }
   },
+  "demo": "",
+  "description": "Beautiful and clean theme that is easy and comfortable to use.",
   "engines": {
     "ghost": ">=4.0.0",
     "ghost-api": "v4"
   },
-  
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Beautiful",
+      "Clean",
+      "Magazine",
+      "Minimal",
+      "Responsive"
+    ]
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme"
+  ],
   "license": "MIT",
   "name": "theme",
+  "screenshots": {
+  },
+  "version": "1.0.4"
 }
