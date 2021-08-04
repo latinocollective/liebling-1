@@ -47,7 +47,7 @@ into the {body} of the default.hbs template --}}
                 <div class="m-tag-card__info {{#unless feature_image}}no-picture{{/unless}}">
                   <h4 class="m-tag-card__name">{{name}}</h4>
                   <span class="m-tag-card__counter">
-                    {{plural count.posts empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}
+                    {{plural count.collections empty=(t "No collections") singular=(t "1 collection") plural=(t "% collections")}}
                   </span>
                 </div>
               </a>
