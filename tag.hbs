@@ -25,8 +25,11 @@ into the {body} of the default.hbs template --}}
   {{!-- Everything inside the #tag tags pulls data from the tag --}}
   {{#tag}}
     {{!-- Inject styles of the hero image to make it responsive --}}
-    {{> hero background=feature_image}}
+    {{> hero }}
     <div class="m-hero__content" data-aos="fade-down">
+      {{#if feature_image}}
+        <div class="m-hero-avatar" style="background-image: url({{feature_image}});"></div>
+      {{/if}}
       <h1 class="m-hero-title bigger">{{name}}</h1>
       {{#if description}}
         <p class="m-hero-description">
