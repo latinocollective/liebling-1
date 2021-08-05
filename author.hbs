@@ -29,8 +29,6 @@ into the {body} of the default.hbs template --}}
       <div class="m-hero__content" data-aos="fade-down">
         {{#if profile_image}}
           <div class="m-hero-avatar" style="background-image: url({{profile_image}});"></div>
-        {{else}}
-          <div class="m-hero-avatar" style="background-image: url({{asset "images/default-avatar-square-normal.jpg"}});"></div>
         {{/if}}
         <h1 class="m-hero-title">{{name}}</h1>
         {{#if bio}}
