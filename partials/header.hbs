@@ -63,7 +63,7 @@ This header template is shared across all the pages.
                 <div class="m-submenu js-submenu">
                   <div class="l-wrapper in-submenu">
                     <section class="m-recent-articles">
-                      <h3 class="m-submenu-title in-recent-articles">{{t "Recent articles"}}</h3>
+                      <h3 class="m-submenu-title in-recent-articles">{{t "recent collections"}}</h3>
                       {{#get "posts" limit="4" order="published_at desc" as |recent|}}
                         {{#if recent}}
                           <div class="glide js-recent-slider">
@@ -82,7 +82,6 @@ This header template is shared across all the pages.
                                     <h3 class="m-recent-article__title js-recent-article-title" title="{{title}}">
                                       {{title}}
                                     </h3>
-                                    <span class="m-recent-article__date">{{date published_at timeago="true"}}</span>
                                   </a>
                                 </div>
                                 {{/foreach}}
@@ -90,7 +89,7 @@ This header template is shared across all the pages.
                             </div>
                           </div>
                         {{else}}
-                          <div class="m-not-found in-recent-articles">{{t "No recent articles found :("}}</div>
+                          <div class="m-not-found in-recent-articles">{{t "No recent collections found :("}}</div>
                         {{/if}}
                       {{/get}}
                     </section>
