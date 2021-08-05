@@ -74,17 +74,15 @@ into the {body} of the default.hbs template --}}
                           <span class="icon-star"></span>
                           <span>{{t "Featured"}}</span>
                         </div>
-                        <a href="{{url}}" class="m-featured-article__content">
+                        <div class="m-featured-article__content">
                           <div></div>
                           <div>
-                            {{#if primary_author}}
-                              <a href="{{primary_author.url}}" class="m-featured-article__tag">{{authors autolink="false" separator=" + "}}</a>
-                            {{/if}}
-                            <h2 class="m-featured-article__title js-featured-article-title" title="{{title}}">
+                            <a href="{{primary_author.url}}" class="m-featured-article__tag">{{authors autolink="false" separator=" + "}}</a>
+                            <a href="{{url}}"><h2 class="m-featured-article__title js-featured-article-title" title="{{title}}">
                               {{title}}
-                            </h2>
+                            </h2></a>
                           </div>
-                        </a>
+                        </div>
                       </article>
                     </div>
                   {{/foreach}}
